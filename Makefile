@@ -1,5 +1,6 @@
 install:
 	pip install --upgrade pip&\
+	pip install --upgrade certifi&\
 	pip install -r requirements.txt
 lint:
 	pylint --disable=C,R app.py
