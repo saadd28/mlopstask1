@@ -5,7 +5,7 @@ name: Python application
 
 on:
   push:
-    branches: [ "i200r550" ]
+    branches: [ "i200550" ]
 
 permissions:
   contents: read
