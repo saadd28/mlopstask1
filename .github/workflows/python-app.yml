@@ -5,7 +5,19 @@ name: Python application
 
 on:
   push:
+<<<<<<< HEAD
     branches: [ "i200550" ]
+=======
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - closed
+
+>>>>>>> 4113992e60af4c026e83702816cb6695f9fef811
 
 permissions:
   contents: read
@@ -14,6 +26,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
 
     steps:
     - uses: actions/checkout@v3

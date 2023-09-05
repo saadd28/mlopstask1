@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\ateeb\mlopstask1\venv
+=======
+set VIRTUAL_ENV=E:\University\7th Semester\MLOps\Class Activity 1\mlopstask1\venv
+>>>>>>> 4113992e60af4c026e83702816cb6695f9fef811
 
 if not defined PROMPT set PROMPT=$P$G
 
